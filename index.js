@@ -3,9 +3,12 @@ const app = express();
 
 app.get("/aluno", (req, res )=> {
     let usuario = {
-                    nome: "Claudio Nunes",
-                    disciplina : "Topicos Especiais",
-                    curso : "ADS"
+                    nome: "Jhonny Santos Lin",
+                    idade: "25 anos",
+                    comida_favorita: "batata frita",
+                    disciplina_favorita : "Topicos Especiais",
+                    curso : "ADS",
+                    instituicao: "FATEC Rubens Lara",
     }
     res.send(usuario)
 }) ;
@@ -14,6 +17,11 @@ app.get("/professores", (req, res )=> {
     let professores  = [ {
                     nome: "David Reis",
                     disciplina : "Topicos Especiais",
+                    curso : "ADS"
+    },
+    {
+                    nome: "Caludio",
+                    disciplina : "Redes",
                     curso : "ADS"
     },
     {
